@@ -1,0 +1,447 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNTYpGu9n+AAnig6vwg7epg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/HD-lang-cloud/AMCAT_Training_Programme_himanshu_Dayaramani_36/blob/main/DAY_4\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y_DuDRG2SEi7",
+        "outputId": "1dc09a5a-46c7-4491-b9d0-106db4522a43"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ],
+      "source": [
+        "#while Loop\n",
+        "i=1\n",
+        "while i<=5:\n",
+        "  print(i)\n",
+        "  i=i+1\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "username=\" \"\n",
+        "password=\" \"\n",
+        "while username != \"Himanshu\" and password != \"Hello\":\n",
+        "  username=input(\"Enter Username: \")\n",
+        "  password=input(\"Enter Password: \")\n",
+        "  if username == \"Himanshu\" and password == \"Hello\":\n",
+        "    print(\"Access Granted\")\n",
+        "  else :\n",
+        "    print(\"Access Denied\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DWo4Rs-xTEWj",
+        "outputId": "fe514f7a-f653-40ef-d860-d291b3e683dd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter Username: Himanshu\n",
+            "Enter Password: Hello\n",
+            "Access Granted\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mycart = [10, 20, 200, 300, 800, 60, 700]\n",
+        "for i in mycart:\n",
+        "  if i > 400:\n",
+        "    print(\"This is my purchased\")\n",
+        "    continue\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "41RMHe6MUIq1",
+        "outputId": "9fa0134a-3878-4940-bd68-0c52e8d449d0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "200\n",
+            "300\n",
+            "This is my purchased\n",
+            "60\n",
+            "This is my purchased\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mydict ={\n",
+        "    101:\"Prashant\",\n",
+        "    102:\"Ashish\",\n",
+        "    103:\"Mohini\",\n",
+        "    104:\"Himanshu\",\n",
+        "    105:\"Ashish\"\n",
+        "}\n",
+        "a = mydict.get(104)\n",
+        "print(a)\n",
+        "\n",
+        "for x in mydict:\n",
+        "  print(x)\n",
+        "\n",
+        "for x , y in mydict.items():\n",
+        "  print(x,y)\n",
+        "#isme row column banaya\n",
+        "mydict[\"Mobile_no\"]=9588425800\n",
+        "print(mydict)\n",
+        "\n",
+        "mydict.pop(104)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 244
+        },
+        "id": "hHX1kbtuUxt-",
+        "outputId": "37d9f7ee-4453-413a-dbb7-3376e459cab7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Himanshu\n",
+            "101\n",
+            "102\n",
+            "103\n",
+            "104\n",
+            "105\n",
+            "101 Prashant\n",
+            "102 Ashish\n",
+            "103 Mohini\n",
+            "104 Himanshu\n",
+            "105 Ashish\n",
+            "{101: 'Prashant', 102: 'Ashish', 103: 'Mohini', 104: 'Himanshu', 105: 'Ashish', 'Mobile_no': 9588425800}\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Himanshu'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#list\n",
+        "#string\n",
+        "#\n",
+        "#Help4code se coding se amcat ke liye padho\n",
+        "#hackerank\n",
+        "#leetcode\n",
+        "#hackerearth"
+      ],
+      "metadata": {
+        "id": "FbAI2_sWWMM2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Palindrome hai ya nhi\n",
+        "name = input(\"Enter a name: \")\n",
+        "if name == name[::-1]:\n",
+        "  print(\"Palindrome\")\n",
+        "else:\n",
+        "  print(\"Not Palindrome\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "QyE0w4JFYO6t",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9b16156c-9f6e-4877-f42c-c699d75ac3b3"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a name: kdw;nac\n",
+            "Not Palindrome\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Name = input(\"Enter 1st Input : \")\n",
+        "Name2 = input(\"Enter 2nd Input :\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Py3iz7XWaqp0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Nested For Loop :\n",
+        "# 1 1 1\n",
+        "# 2 2 2\n",
+        "# 3 3 3\n",
+        "\n",
+        "#Patterns wale code ate hai pattern wale\n",
+        "\n",
+        "for i in range(1,4):      # outer loop for rows\n",
+        "    for j in range(1,4):  # inner loop for columns\n",
+        "        print(i, end=\" \")\n",
+        "    print()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "wfyhVwsOa9Sk",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "52e2345d-52dc-4487-bcf8-b2464d5e5dba"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 1 1 \n",
+            "2 2 2 \n",
+            "3 3 3 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter the number of rows: \"))\n",
+        "for i in range(1, n+1):\n",
+        "    for j in range(1, i+1):\n",
+        "        print(chr(71+1),end =\" \")#ASCII\n",
+        "\n",
+        "    print()"
+      ],
+      "metadata": {
+        "id": "bf9RbkLlc6O8",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "41fe85f1-6cef-4f66-8ba6-d0b9b02e9b41"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number of rows: 8\n",
+            "H \n",
+            "H H \n",
+            "H H H \n",
+            "H H H H \n",
+            "H H H H H \n",
+            "H H H H H H \n",
+            "H H H H H H H \n",
+            "H H H H H H H H \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter the number of rows: \"))\n",
+        "for i in range(1, n+1):\n",
+        "    for j in range(1,1+i) :\n",
+        "      print(i,end=\" \")\n",
+        "    print()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tqiUktlpeRGG",
+        "outputId": "ab25dc3d-d6b5-4822-d6d4-d1660fc36a0a"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number of rows: 36\n",
+            "1 \n",
+            "2 2 \n",
+            "3 3 3 \n",
+            "4 4 4 4 \n",
+            "5 5 5 5 5 \n",
+            "6 6 6 6 6 6 \n",
+            "7 7 7 7 7 7 7 \n",
+            "8 8 8 8 8 8 8 8 \n",
+            "9 9 9 9 9 9 9 9 9 \n",
+            "10 10 10 10 10 10 10 10 10 10 \n",
+            "11 11 11 11 11 11 11 11 11 11 11 \n",
+            "12 12 12 12 12 12 12 12 12 12 12 12 \n",
+            "13 13 13 13 13 13 13 13 13 13 13 13 13 \n",
+            "14 14 14 14 14 14 14 14 14 14 14 14 14 14 \n",
+            "15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 \n",
+            "16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 \n",
+            "17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 \n",
+            "18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 \n",
+            "19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 \n",
+            "20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 \n",
+            "21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 \n",
+            "22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 \n",
+            "23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 \n",
+            "24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 \n",
+            "25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 \n",
+            "26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 \n",
+            "27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 27 \n",
+            "28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 28 \n",
+            "29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 \n",
+            "30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 \n",
+            "31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 31 \n",
+            "32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 \n",
+            "33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 \n",
+            "34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 34 \n",
+            "35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 \n",
+            "36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 36 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter the number of student : \"))\n",
+        "d = {}\n",
+        "for i in range(n):\n",
+        "  name = input(\"Enter the name of student : \")\n",
+        "  marks = int(input(\"Enter the marks of student : \"))\n",
+        "  d[name] = marks\n",
+        "  while true :\n",
+        "    name = input(\"Enter Student Name : \")\n",
+        "    marks = d.get(name)\n",
+        "    if marks == -1:\n",
+        "      print(\"Student Not Found\")\n",
+        "\n",
+        "    else :\n",
+        "      print(\"The Marks of\", name ,\"are\" ,marks)\n",
+        "    options\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 263
+        },
+        "id": "akb5ysIzfWes",
+        "outputId": "43320b75-f26a-4cc0-cd19-ab78e9b6361d"
+      },
+      "execution_count": 55,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter the number of student : 12\n",
+            "Enter the name of student : 22\n",
+            "Enter the marks of student : 21\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'true' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_273/2655760294.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      5\u001b[0m   \u001b[0mmarks\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Enter the marks of student : \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m   \u001b[0md\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mmarks\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m   \u001b[0;32mwhile\u001b[0m \u001b[0mtrue\u001b[0m \u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m     \u001b[0mname\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Enter Student Name : \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m     \u001b[0mmarks\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0md\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'true' is not defined"
+          ]
+        }
+      ]
+    }
+  ]
+}
